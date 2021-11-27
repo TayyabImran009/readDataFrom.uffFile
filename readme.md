@@ -53,6 +53,6 @@ python manage.py runserver
 http://localhost:8000/admin
 ```
 ### Type the user name and passwrd:
-> username: admin
+> username: admin <br />
 > password: admin123
 ## Click on infos to see all your data
