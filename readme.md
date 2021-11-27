@@ -18,11 +18,11 @@ import os
 ```
 import csv
 ```
-### Import table from models.py type:
+### Import table from models.py:
 ```
 from getData.models import info
 ```
-### Change the type of the file type:
+### Change the type of the file:
 ```	
 os.rename('de956088bab2a9168c7647fdf1be7cc5/DTC5259515123502080915D0010.uff','de956088bab2a9168c7647fdf1be7cc5/DTC5259515123502080915D0010.csv')
 ```
@@ -34,16 +34,15 @@ with open('de956088bab2a9168c7647fdf1be7cc5/DTC5259515123502080915D0010.csv') as
 ```
 reader = csv.reader(f)
 ```
-### Now make loop to add all the data to the data base:
+### Now make loop to add all the data to the database:
 ```
 for row in reader:
 	d = info(data=row)
 	d.save()
 ```
 ### Now exit the python shell by pressing:
-> ctrl+d
-### confirm by pressing:
-> y and enter
+> ctrl+d <br/>
+confirm by typing y and then press enter.
 ### To see the data at admin panel run the project by typing:
 ```	
 python manage.py runserver
